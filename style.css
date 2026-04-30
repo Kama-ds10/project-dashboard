@@ -115,3 +115,77 @@ tr:hover {
     background: #f8f9fa;
 }
 
+/* Status badges */
+.status {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-Pending {
+    background: #fff3cd;
+    color: #e74118;
+}
+
+
+.status-Active {
+    background: #d1ecf1;
+    color: #2bd415;
+}
+
+.status-Completed {
+    background: #d4edda;
+    color: #f3d034;
+}
+
+/* Action buttons */
+.action-btn {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.toggle-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #333;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    #projectForm {
+        flex-direction: column;
+    }
+    
+    #projectForm input, #projectForm select, #projectForm button {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
