@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Dashboard</h1>
+        
+        <!-- Add Project Form -->
+        <form id="projectForm">
+            <input type="text" id="projectName" placeholder="Project Name" required>
+            <input type="url" id="projectUrl" placeholder="https://example.com" required>
+            <select id="projectStatus" required>
+                <option value="Pending">Pending</option>
+                <option value="Active">Active</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button type="submit">Add Project</button>
+        </form>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Pending">Pending</button>
+            <button class="filter-btn" data-filter="Active">Active</button>
+            <button class="filter-btn" data-filter="Completed">Completed</button>
+        </div>
+
+        <!-- Projects Table -->
+        <table id="projectTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- JS will inject rows here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
